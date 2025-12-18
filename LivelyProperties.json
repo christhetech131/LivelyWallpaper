@@ -1,0 +1,339 @@
+{
+  "useImg": {
+    "text": "use image as background",
+    "type": "checkbox",
+    "value": false
+  },
+
+  "imgPath": {
+    "type": "folderDropdown",
+    "value": "background.png",
+    "text": "Image/Gif",
+    "filter": "*.jpg|*.png|*.gif",
+    "folder": "images"
+  },
+
+  "useVideo": {
+    "text": "use video as background",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "videoPath": {
+    "type": "folderDropdown",
+    "value": "background.mp4",
+    "text": "Video",
+    "filter": "*.mp4|*.webm|*.mkv|*.mov",
+    "folder": "video"
+  },
+
+  "showVisualizer": {
+    "text": "show visualizer",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "color1": {
+    "text": "starting color",
+    "type": "color",
+    "value": "#ffd66b"
+  },
+
+  "color2": {
+    "text": "finish color",
+    "type": "color",
+    "value": "#ff8b2b"
+  },
+
+  "opacity": {
+    "max": 100,
+    "min": 0,
+    "tick": 25,
+    "step": 1,
+    "text": "spectrum opacity",
+    "type": "slider",
+    "value": 100
+  },
+
+  "amplitude": {
+    "max": 1000,
+    "min": 100,
+    "tick": 25,
+    "step": 10,
+    "text": "bar height",
+    "type": "slider",
+    "value": 300
+  },
+
+  "spectrumScale": {
+    "max": 150,
+    "min": 50,
+    "tick": 25,
+    "step": 1,
+    "text": "spectrum width (%)",
+    "type": "slider",
+    "value": 80
+  },
+
+  "spectrumX": {
+    "max": 100,
+    "min": 0,
+    "tick": 25,
+    "step": 1,
+    "text": "spectrum x position",
+    "type": "slider",
+    "value": 50
+  },
+
+  "spectrumY": {
+    "max": 100,
+    "min": 0,
+    "tick": 25,
+    "step": 1,
+    "text": "spectrum y position",
+    "type": "slider",
+    "value": 80
+  },
+
+  "showClock": {
+    "text": "show clock",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "showClockDayOfWeek": {
+    "text": "show day of week",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "dayFont": {
+    "text": "day font",
+    "type": "dropdown",
+    "value": 0,
+    "items": [
+      "Segoe UI",
+      "Arial",
+      "Calibri",
+      "Times New Roman",
+      "Georgia",
+      "Verdana",
+      "Tahoma",
+      "Trebuchet MS",
+      "Courier New",
+      "Consolas"
+    ]
+  },
+
+  "dayScale": {
+    "max": 400,
+    "min": 10,
+    "tick": 50,
+    "step": 1,
+    "text": "day of week scale",
+    "type": "slider",
+    "value": 100
+  },
+
+  "dayX": {
+    "max": 100,
+    "min": 1,
+    "tick": 25,
+    "step": 1,
+    "text": "day of week x position",
+    "type": "slider",
+    "value": 50
+  },
+
+  "dayY": {
+    "max": 120,
+    "min": 1,
+    "tick": 25,
+    "step": 1,
+    "text": "day of week y position",
+    "type": "slider",
+    "value": 10
+  },
+
+  "showClockDate": {
+    "text": "show day & month",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "dateFont": {
+    "text": "date font",
+    "type": "dropdown",
+    "value": 0,
+    "items": [
+      "Segoe UI",
+      "Arial",
+      "Calibri",
+      "Times New Roman",
+      "Georgia",
+      "Verdana",
+      "Tahoma",
+      "Trebuchet MS",
+      "Courier New",
+      "Consolas"
+    ]
+  },
+
+  "dateScale": {
+    "max": 400,
+    "min": 10,
+    "tick": 50,
+    "step": 1,
+    "text": "date scale",
+    "type": "slider",
+    "value": 100
+  },
+
+  "dateX": {
+    "max": 100,
+    "min": 1,
+    "tick": 25,
+    "step": 1,
+    "text": "date x position",
+    "type": "slider",
+    "value": 50
+  },
+
+  "dateY": {
+    "max": 120,
+    "min": 1,
+    "tick": 25,
+    "step": 1,
+    "text": "date y position",
+    "type": "slider",
+    "value": 16
+  },
+
+  "showClockTime": {
+    "text": "show time",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "showSeconds": {
+    "text": "show seconds",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "timeFormat": {
+    "text": "time format",
+    "type": "dropdown",
+    "value": 0,
+    "items": [
+      "12-hour",
+      "24-hour"
+    ]
+  },
+
+  "timeFont": {
+    "text": "time font",
+    "type": "dropdown",
+    "value": 0,
+    "items": [
+      "Segoe UI",
+      "Arial",
+      "Calibri",
+      "Times New Roman",
+      "Georgia",
+      "Verdana",
+      "Tahoma",
+      "Trebuchet MS",
+      "Courier New",
+      "Consolas"
+    ]
+  },
+
+  "timeScale": {
+    "max": 400,
+    "min": 10,
+    "tick": 50,
+    "step": 1,
+    "text": "time scale",
+    "type": "slider",
+    "value": 100
+  },
+
+  "timeX": {
+    "max": 100,
+    "min": 1,
+    "tick": 25,
+    "step": 1,
+    "text": "time x position",
+    "type": "slider",
+    "value": 50
+  },
+
+  "timeY": {
+    "max": 120,
+    "min": 1,
+    "tick": 25,
+    "step": 1,
+    "text": "time y position",
+    "type": "slider",
+    "value": 24
+  },
+
+  "showTrackText": {
+    "text": "show track text",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "textColor": {
+    "text": "audio track text color",
+    "type": "color",
+    "value": "#FFFFFF"
+  },
+
+  "glow": {
+    "text": "neon glow effect",
+    "type": "checkbox",
+    "value": true
+  },
+
+  "glowStrength": {
+    "max": 50,
+    "min": 1,
+    "tick": 25,
+    "step": 1,
+    "text": "neon effect strength",
+    "type": "slider",
+    "value": 10
+  },
+
+  "textScale": {
+    "max": 400,
+    "min": 10,
+    "tick": 50,
+    "step": 1,
+    "text": "track text scale",
+    "type": "slider",
+    "value": 100
+  },
+
+  "textX": {
+    "max": 100,
+    "min": 0,
+    "tick": 25,
+    "step": 1,
+    "text": "track text x position",
+    "type": "slider",
+    "value": 50
+  },
+
+  "textY": {
+    "max": 100,
+    "min": 0,
+    "tick": 25,
+    "step": 1,
+    "text": "track text y position",
+    "type": "slider",
+    "value": 50
+  }
+}

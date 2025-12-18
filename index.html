@@ -1,0 +1,164 @@
+<!--
+  Christian Wallpaper, Clock and Visualizer
+  Lively Wallpaper (HTML entry point)
+
+  Code:
+    MIT License
+    Copyright (c) 2020 NowbodyAnybody
+    Copyright (c) 2025 Christopher Galati
+    See LICENSE for the full text.
+
+  Artwork:
+    Burning-bush background image & video
+    © 2025 Christopher Galati — licensed under CC BY 4.0
+    See ASSETS.md for details and attribution requirements.
+
+  Repository:
+    https://github.com/Christhetech131/LivelyWallpaper
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Christian Wallpaper, Clock and Visualizer</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #console {
+      position: fixed;
+      left: 10px;
+      bottom: 10px;
+      font-size: 12px;
+      color: #ffffff;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 50;
+    }
+
+    /* Background layers */
+    #backgroundImg,
+    #bgVideo,
+    #fallbackBg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Show video by default; JS will switch if needed */
+    #bgVideo {
+      display: block;
+    }
+
+    #backgroundImg {
+      display: none;
+    }
+
+    #fallbackBg {
+      display: none;
+    }
+
+    /* Visualizer canvas */
+    #canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 200px;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    /* Track text */
+    #audioData {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      color: #ffffff;
+      text-shadow: 0 0 8px rgba(0,0,0,0.8);
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 6;
+      display: block;
+    }
+
+    /* Clock container and items */
+    #clockContainer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; /* important so % top is meaningful if used */
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 0 0 8px rgba(0,0,0,0.85);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    #dayText,
+    #dateText,
+    #timeText {
+      position: absolute;
+      transform: translateX(-50%); /* horizontal centering; Y is handled in JS */
+      opacity: 0.9;
+    }
+
+    #dayText {
+      font-size: 30px;
+      font-weight: 300;
+    }
+
+    #dateText {
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    #timeText {
+      font-size: 60px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div id="console"></div>
+
+  <!-- Fallback background with instructions (when neither image nor video is selected) -->
+  <img id="fallbackBg" src="images/defaultBackgroundInstructions.svg"
+       alt="Set background in Lively options" />
+
+  <!-- Static background image -->
+  <img id="backgroundImg" src="images/background.png" alt="Background" />
+
+  <!-- Background video -->
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source id="bgVideoSource" src="video/background.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Audio visualizer canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Track text from Lively -->
+  <div id="audioData"></div>
+
+  <!-- Clock -->
+  <div id="clockContainer">
+    <div id="dayText"></div>
+    <div id="dateText"></div>
+    <div id="timeText"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="3840"
+    height="1080"
+    viewBox="0 0 3840 1080">
+  <defs>
+    <linearGradient id="glowLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9f1c" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#ff9f1c" stop-opacity="0.8"/>
+      <stop offset="65%" stop-color="#ffd166" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff9f1c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="3840" height="1080" fill="#000000"/>
+
+  <!-- Subtle center glow -->
+  <circle cx="1920" cy="540" r="520" fill="#ffb347" fill-opacity="0.12"/>
+  <circle cx="1920" cy="540" r="320" fill="#ffb347" fill-opacity="0.18"/>
+
+  <!-- Title -->
+  <text x="1920" y="330"
+        text-anchor="middle"
+        font-family="Segoe UI, system-ui, sans-serif"
+        font-size="64"
+        fill="#ffffff">
+    Christian Wallpaper, Clock &amp; Visualizer
+  </text>
+
+  <!-- Divider glow line -->
+  <rect x="760" y="360" width="2320" height="3" fill="url(#glowLine)"/>
+
+  <!-- Main instruction text -->
+  <text x="1920" y="450"
+        text-anchor="middle"
+        font-family="Segoe UI, system-ui, sans-serif"
+        font-size="40"
+        fill="#f5f5f5">
+    No background selected
+  </text>
+
+  <text x="1920" y="520"
+        text-anchor="middle"
+        font-family="Segoe UI, system-ui, sans-serif"
+        font-size="30"
+        fill="#e0e0e0">
+    Open Lively  ➜  right-click this wallpaper  ➜  Customise
+  </text>
+
+  <text x="1920" y="570"
+        text-anchor="middle"
+        font-family="Segoe UI, system-ui, sans-serif"
+        font-size="28"
+        fill="#e0e0e0">
+    • Turn on “use video as background” and pick a file from the Video dropdown
+  </text>
+
+  <text x="1920" y="610"
+        text-anchor="middle"
+        font-family="Segoe UI, system-ui, sans-serif"
+        font-size="28"
+        fill="#e0e0e0">
+    • Or turn on “use image as background” and choose an image/GIF
+  </text>
+
+  <text x="1920" y="670"
+        text-anchor="middle"
+        font-family="Segoe UI, system-ui, sans-serif"
+        font-size="26"
+        fill="#bbbbbb">
+    You can also toggle the visualizer and clock in the same menu.
+  </text>
+</svg>

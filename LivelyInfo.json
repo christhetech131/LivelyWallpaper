@@ -1,0 +1,14 @@
+{
+  "AppVersion": "1.0.0.0",
+  "Title": "Christian Wallpaper, Clock and Visualizer",
+  "Thumbnail": "thumb.jpg",
+  "Preview": "preview.gif",
+  "Desc": "Displays an audio spectrum of the currently playing system sounds, displays a clock, burning-bush wallpaper.",
+  "Author": "Christhetech131 (based on work by NowbodyAnybody)",
+  "License": "MIT",
+  "Contact": "https://github.com/Christhetech131/LivelyWallpaper",
+  "Type": 2,
+  "FileName": "index.html",
+  "Arguments": null,
+  "IsAbsolutePath": false
+}
